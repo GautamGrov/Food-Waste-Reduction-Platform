@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://maticrenew973.weebly.com/uploads/1/2/6/6/126682753/100450183.jpg'); /* Black background */
+    color: #fff; /* Light text color for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f6f7; /* Light grey-blue background */
+    color: #2c3e50; /* Dark blue-grey text */
+    line-height: 1.6;
+}
+
+header {
+    background: #2980b9; /* Vivid blue */
+    color: #ecf0f1; /* Soft white */
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeInDown 2s ease-out;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    background: #34495e; /* Dark blue-grey */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #bdc3c7; /* Light grey text */
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #2980b9; /* Vivid blue for hover/focus */
+}
+
+section {
+    padding: 2rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+h2 {
+    color: #3498db; /* Bright blue */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2c3e50; /* Dark blue-grey */
+    color: #ecf0f1; /* Soft white */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 3s ease-out;
+}
+
+footer a {
+    color: #3498db; /* Bright blue link */
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Enhanced link styling */
+a {
+    color: #3498db; /* Bright blue link color matching the footer links */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for color and transform */
+}
+
+a:hover, a:focus {
+    color: #2980b9; /* Darker blue for hover/focus to indicate interactivity */
+    text-decoration: underline; /* Adds underline on hover/focus for clarity */
+    transform: scale(1.05); /* Slightly enlarges the link for visual feedback */
+     border-radius: 4px;    
+    border: 1px solid lightblue;
+    color: white;
+}
+
+/* Special styling for buttons within <a> tags to override the above */
+a button, a[href="surplusAlerts.jsp"] {
+    color: #fff; /* Ensures text remains white */
+    text-decoration: none; /* Avoids any underline */
+}
+
+a button:hover, a[href="surplusAlerts.jsp"]:hover {
+   
+    text-decoration: none; /* Continues to avoid underline */
+}

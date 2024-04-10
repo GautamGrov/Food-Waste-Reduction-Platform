@@ -1,0 +1,88 @@
+/* Enhanced style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://maticrenew973.weebly.com/uploads/1/2/6/6/126682753/100450183.jpg'); /* Black background */
+    color: #fff; /* Light text color for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.02); /* Darker form background */
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #333; /* Subtle border */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+form:hover {
+    transform: scale(1.02); /* Slight scale up on hover */
+}
+
+h1 {
+    color: #4CAF50; /* Brighter, more vibrant color for the title */
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input size */
+    margin: 10px 0 20px; /* Adjusted margins for spacing */
+    background-color: #fff; /* Darker input backgrounds */
+    color: #333; /* Light text for inputs */
+    border: 1px solid #444; /* Darker border for inputs */
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+    transition: background-color 0.3s ease; /* Smooth background color transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    background-color: #555; /* Darker background on focus for better visibility */
+    outline: none; /* Removes the default focus outline */
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50; /* Vibrant submit button */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 0; /* Adjusted top margin */
+    border: none;
+    border-radius: 5px; /* Consistent rounded corners */
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth opacity transition for hover */
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8; /* Slight fade effect on hover */
+}
+
+a {
+    
+    color: #007bff; /* Blue color for link */
+    font-family: sans-serif;
+    padding: 40px;
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Bold font */
+    transition: color 0.3s ease; /* Smooth color transition over 0.3 seconds */
+}
+
+a:hover{
+     text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue color on hover */
+}

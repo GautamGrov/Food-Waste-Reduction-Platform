@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+     background-image: url('https://maticrenew973.weebly.com/uploads/1/2/6/6/126682753/100450183.jpg'); /* Black background */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: block;
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    animation: fadeInBody 1s ease-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #0275d8;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-out;
+    margin-top:20%;
+}
+
+p {
+    margin-bottom: 20px;
+    animation: slideInFromRight 1s ease-out;
+}
+/* Styling for links and buttons */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button, a[href="surplusAlerts.jsp"] {
+    background-color: #5cb85c; /* Green for buttons by default */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    animation: popIn 0.5s ease-out forwards;
+    opacity: 0; /* Start invisible for animation */
+}
+
+button:hover,
+button:focus,
+a[href="surplusAlerts.jsp"]:hover,
+a[href="surplusAlerts.jsp"]:focus {
+    transform: scale(1.05);
+    background-color: #449d44; /* Darker green for hover */
+}
+
+/* Specific styling for Surplus Alerts Link */
+a[href="surplusAlerts.jsp"] {
+    background-color: #0275d8; /* Blue for Surplus Alerts */
+}
+
+a[href="surplusAlerts.jsp"]:hover,
+a[href="surplusAlerts.jsp"]:focus {
+    background-color: #025aa5; /* Darker blue */
+}
+
+/* Animations */
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Delaying animations */
+button:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+button:nth-of-type(2), a[href="surplusAlerts.jsp"] {
+    animation-delay: 0.7s;
+}
+
+button:nth-of-type(3) {
+    animation-delay: 0.9s;
+}
+
+/* Logout link */
+a[href="login.html"] {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a[href="login.html"]:hover {
+    color: #2980b9;
+}
+
+/* Claim button */
+input[type="submit"] {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #219653;
+    transform: scale(1.05);
+}
