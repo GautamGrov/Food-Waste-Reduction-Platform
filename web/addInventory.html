@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Inventory</title>
+    <link rel="stylesheet" href="stylesRegistration.css"/>
+</head>
+<body>
+    <h1>Add Inventory</h1>
+    <form action="AddFoodItemServlet" method="post">
+        <label for="name">Item Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <!-- Inside your HTML form -->
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" required><br><br>
+
+
+        <label for="expirationDate">Expiration Date:</label><br>
+        <input type="date" id="expirationDate" name="expirationDate" required><br><br>
+
+            <select name="status">
+        <option value="available">Available</option>
+        <option value="discounted">Discounted</option> <!-- Updated option -->
+        <option value="donated">Donated</option>
+    </select>
+
+
+        <!-- Hidden input for Retailer ID -->
+        <input type="hidden" name="retailerID" value="<%= request.getSession().getAttribute("retailerID") %>
+
+        <input type="submit" value="Add Item">
+    </form>
+</body>
+</html>
